@@ -10,7 +10,7 @@ function createFeatures(earthquakeData) {
           "</h3><hr><p>" + new Date(feature.properties.time) +"</p><hr><p>Magnitude: "+ feature.properties.mag+"</p>");
       }
     function radiusSize(magnitude) {
-        return magnitude * 15000;
+        return magnitude * magnitude * 5000;
       }
       function circleColor(magnitude) {
         if (magnitude < 1) {
